@@ -173,7 +173,7 @@ main section .col-sm-3 button:hover {
 main .banner2 {
     margin-top: 2rem;
     width: 100%;
-    background-image: url(/web2/lap7/img/banner2.jpg);
+    background-image: url(/img/banner2.jpg);
     background-size: 530px 300px;
     height: 300px;
     background-repeat: repeat;
