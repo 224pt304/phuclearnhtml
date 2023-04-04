@@ -76,15 +76,16 @@ header .background2 nav img {
     max-height: 27px;
 }
 
-header .background2 nav a {
+header .background2 nav .container a {
     color: white;
     text-decoration: none;
-    transition: 0.5s;
+    transition: 1s;
     font-size: 13px;
 }
 
-header .background2 nav a:hover {
+header .background2 nav .container a:hover {
     background-color: #358154bd;
+    color: white;
 }
 
 header .background2 nav .right a {
