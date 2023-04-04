@@ -1,0 +1,202 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* css banner */
+.banner {
+    width: 100%;
+    max-height: 500px;
+    height: auto;
+    margin-top: 5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner .color {
+    width: 20%;
+    height: auto;
+}
+
+.banner .text {
+    font-size: 14px;
+    color: white;
+}
+
+
+.banner .text span {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.banner button.click {
+    color: white;
+    background-color: red;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/* css of text new arrials */
+main .tieude {
+    font-size: 30px;
+    font-weight: lighter;
+    text-align: center;
+    margin: auto;
+    margin-top: 3rem;
+    position: relative;
+}
+
+main .tieude::before {
+    background: #DDDDDD;
+    content: "";
+    display: block;
+    height: 1px;
+    margin-left: 12%;
+    position: absolute;
+    top: 22px;
+    width: 30%;
+    z-index: -1;
+}
+
+main .tieude::after {
+    background: #DDDDDD;
+    content: "";
+    display: block;
+    height: 1px;
+    margin-left: 58%;
+    position: absolute;
+    top: 22px;
+    width: 30%;
+    z-index: -1;
+}
+
+/* css main of object */
+main section {
+    width: 91%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* css object */
+main section .col-sm-3 {
+    width: 260px;
+    margin: auto;
+    margin-top: 1rem;
+    border: 1px solid gainsboro;
+}
+
+main section .col-sm-3 .hinh {
+    width: 100%;
+    position: relative;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+main section .col-sm-3 .hinh img {
+    width: 100%;
+    height: 270px;
+    transition: 1s;
+}
+
+/* css hover img */
+main section .col-sm-3 .hinh .ahover {
+    position: absolute;
+    text-decoration: none;
+    z-index: 20;
+    left: 30%;
+    top: 50%;
+    color: black;
+    padding: 0.5rem;
+    box-shadow: 3px 3px 10px black;
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: -1;
+    transition: 1s;
+}
+
+main section .col-sm-3 .hinh:hover .ahover {
+    background-color: white;
+    opacity: 0.7;
+    z-index: 2;
+}
+
+main section .col-sm-3 .hinh:hover img {
+    transform: rotate(20deg);
+}
+
+main section .col-sm-3:hover {
+    border: 1px solid #4EC67F;
+}
+
+main section .col-sm-3 .hinh .text span:nth-child(1) {
+    background-color: #4EC67F;
+    color: white;
+    position: absolute;
+    bottom: 2rem;
+    left: 0px;
+    padding: 1px 5px 1px 5px;
+}
+
+main section .col-sm-3 .hinh .text span:nth-child(2) {
+    background-color: rgb(255, 84, 84);
+    color: white;
+    position: absolute;
+    bottom: 2rem;
+    left: 2.65rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 1px 5px 1px 5px;
+}
+
+main section .col-sm-3 .option a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+}
+
+main section .col-sm-3 button {
+    border: none;
+    background-color: #4EC67F;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    transition: 1s;
+}
+
+main section .col-sm-3 button:hover {
+    background-color: darkgreen;
+}
+
+main .banner2 {
+    margin-top: 2rem;
+    width: 100%;
+    background-image: url(/web2/lap7/img/banner2.jpg);
+    background-size: 530px 300px;
+    height: 300px;
+    background-repeat: repeat;
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .banner2 span {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+@media screen and (max-width:600px) {
+    .banner .text {
+        display: none;
+    }
+
+    main .banner2 span {
+        font-size: 30px;
+    }
+}
