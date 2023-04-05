@@ -66,8 +66,20 @@ main .container {
     width: 70%;
 }
 
-table#cart tfoot .btn {
-    width: 250px;
+#cart {
+    table-layout: auto;
+}
+
+#cart th {
+    background: #f7f7f7;
+    text-align: center;
+    padding: 10px;
+}
+
+#cart td,
+#cart th {
+    vertical-align: middle;
+    text-align: center;
 }
 
 main .side {
@@ -162,6 +174,10 @@ main .side .sanpham .code button {
         display: inline-block;
         font-weight: bold;
         width: 40%;
+    }
+
+    table#cart tbody td.actions:before {
+        display: none;
     }
 
     table#cart tfoot {
